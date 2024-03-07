@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form id="myForm">
+    <fieldset class="personal">
+        <label for="firstName">First Name:</label><br>
+        <input class="info" type="text" id="firstName" name="firstName" placeholder="First Name"><br>
+
+        <label for="lastName">Last Name:</label><br>
+        <input class="info" type="text" id="lastName" name="lastName" placeholder="Last Name"><br>
+
+        <label for="email">Email:</label><br>
+        <input class="info" type="email" id="email" name="email" placeholder="Email"><br>
+
+        <label for="password">Password:</label><br>
+        <input class="info" type="password" id="password" name="password" placeholder="Password"><br>
+    </fieldset>
+
+    <fieldset class="food">
+        <label for="favoriteFood">Favorite Food:</label><br>
+
+        <input class="checkbox" type="checkbox" id="pizza" name="favoriteFood" value="pizza">
+        <label for="pizza">Pizza</label><br>
+
+        <input class="checkbox" type="checkbox" id="burger" name="favoriteFood" value="burger">
+        <label for="burger">Burger</label><br>
+
+        <input class="checkbox" type="checkbox" id="tacos" name="favoriteFood" value="tacos">
+        <label for="tacos">Tacos</label><br>
+
+        <input class="checkbox" type="checkbox" id="pasta" name="favoriteFood" value="pasta">
+        <label for="pasta">Pasta</label><br>
+
+        <input class="checkbox" type="checkbox" id="sushi" name="favoriteFood" value="sushi">
+        <label for="sushi">Sushi</label><br>
+    </fieldset>
+
+    <fieldset class="tv">
+        <label for="favoriteTVSeries">Favorite TV Series:</label><br>
+
+        <input class="radio" type="radio" id="breakingBad" name="favoriteTVSeries" value="breakingBad">
+        <label for="breakingBad">Breaking Bad</label><br>
+
+        <input class="radio" type="radio" id="gameOfThrones" name="favoriteTVSeries" value="gameOfThrones">
+        <label for="gameOfThrones">Game of Thrones</label><br>
+
+        <input class="radio" type="radio" id="peakyBlinders" name="favoriteTVSeries" value="peakyBlinders">
+        <label for="peakyBlinders">Peaky Blinders</label><br>
+
+        <input class="radio" type="radio" id="bandOfBrothers" name="favoriteTVSeries" value="bandOfBrothers">
+        <label for="bandOfBrothers">Band of Brothers</label><br>
+    </fieldset>
+
+    <input type="button" value="Submit" onclick="formData()" class="button">
+    <input type="reset" value="Reset" class="button"> 
+
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
