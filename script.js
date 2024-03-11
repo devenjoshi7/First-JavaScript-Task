@@ -4,22 +4,22 @@ document.getElementById('my-form').addEventListener('submit', function(event) {
 })
 
 function submitForm() {
-  const firstName = document.getElementById('first-name').value;
-  const lastName = document.getElementById('last-name').value;
-  const email = document.getElementById('email').value;
-  const password = document.getElementById('password').value;
+  let firstName = document.getElementById('first-name').value;
+  let lastName = document.getElementById('last-name').value;
+  let email = document.getElementById('email').value;
+  let password = document.getElementById('password').value;
 
-  const favoriteFood = [];
-  const favoriteTVSeries = '';
+  let favoriteFood = [];
+  let favoriteTVSeries = '';
 
-  const foodCheckbox = document.getElementsByName('favoriteFood');
+  let foodCheckbox = document.getElementsByName('favoriteFood');
   for(let i=0; i<foodCheckbox.length; i++){
     if(foodCheckbox[i].checked){
       favoriteFood.push(foodCheckbox[i].value);
     }
   }
 
-  const tvSeriesRadio = document.getElementsByName('favoriteTVSeries');
+  let tvSeriesRadio = document.getElementsByName('favoriteTVSeries');
   for(let i=0; i<tvSeriesRadio.length; i++){
     if(tvSeriesRadio[i].checked){
       favoriteTVSeries = tvSeriesRadio[i].value;
@@ -27,7 +27,7 @@ function submitForm() {
     }
   }
 
-  const defaultText = "First Name: "+ firstName +"<br>Last Name: "+ lastName +"<br>Email: "+ email +"<br>Password: "+ password +"<br>Favorite Food :"+ favoriteFood +" " + "<br>Favorite TV Series: "+ favoriteTVSeries;
+  let defaultText = "First Name: "+ firstName +"<br>Last Name: "+ lastName +"<br>Email: "+ email +"<br>Password: "+ password +"<br>Favorite Food :"+ favoriteFood +" " + "<br>Favorite TV Series: "+ favoriteTVSeries;
   document.getElementById('default-text').innerHTML = defaultText;
 
   document.getElementById('my-form').reset()
